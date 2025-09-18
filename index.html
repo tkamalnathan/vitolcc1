@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course & Student Count</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url('https://i.postimg.cc/4dKwjpJR/Why-choose-VIT-in-Chennai-Best-Engineering-college-in-Chennai.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: -1;
+    }
+
+    @keyframes fadeSlideIn {
+      0% { opacity: 0; transform: translateY(50px) scale(0.95); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .glass-card {
+      backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      width: 90%;
+      max-width: 900px;
+      text-align: center;
+      animation: fadeSlideIn 1s ease forwards;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    header img {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      animation: fadeSlideIn 1.2s ease forwards;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(90deg, #ff6b6b, #f8e71c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 1px 2px 6px rgba(0,0,0,0.3);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 12px;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+    }
+
+    th, td {
+      padding: 14px 16px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    /* Gradient header */
+    th {
+      background: linear-gradient(90deg, #FF6B6B, #FFB347);
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Gradient column backgrounds and text */
+    td:first-child {
+      background: linear-gradient(90deg, #FFA07A, #FF4500);
+      color: #fff;
+    }
+    td:nth-child(2) {
+      background: linear-gradient(90deg, #98FB98, #32CD32);
+      color: #fff;
+    }
+    td:nth-child(3) {
+      background: linear-gradient(90deg, #87CEFA, #1E90FF);
+      color: #fff;
+    }
+    td:nth-child(4) {
+      background: linear-gradient(90deg, #DA70D6, #8A2BE2);
+      color: #fff;
+    }
+
+    /* Staggered row animation */
+    tr {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeSlideIn 0.8s ease forwards;
+    }
+    tbody tr:nth-child(1) { animation-delay: 0.3s; }
+    tbody tr:nth-child(2) { animation-delay: 0.5s; }
+    tbody tr:nth-child(3) { animation-delay: 0.7s; }
+    tbody tr:nth-child(4) { animation-delay: 0.9s; }
+
+    /* Hover effect */
+    tr:hover td {
+      background: linear-gradient(90deg, #00FFFF, #1E90FF);
+      color: #000;
+      transform: scale(1.03);
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="glass-card">
+    <header>
+      <img src="https://i.postimg.cc/RVTq58p4/VIT-2025.png" alt="Logo">
+      <h1>VITOL - OC Course Summary</h1>
+    </header>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Course Name</th>
+		  <th>Course Code</th>
+          <th>Student Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Environmental Sciences</td>
+          <td>BACHY101</td>
+          <td>4256</td>
+         
+        </tr>
+        <tr>
+          <td>Environmental Sciences</td>
+          <td>BCHY102N</td>
+          <td>4450</td>
+          
+        </tr>
+        <tr>
+          <td>Ethics and Values</td>
+          <td>BHUM101N</td>
+          <td>2782</td>
+         
+        </tr>
+		<tr>
+          <td>Essence of Traditional Knowledge</td>
+          <td>BSSC101N / ISSC101N / USSC153N</td>
+          <td>3124</td>
+          
+        </tr>
+        <tr>
+          <td>Indian Constitution</td>
+          <td>BSSC102N / ISSC102N</td>
+          <td>2120</td>
+		  
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
